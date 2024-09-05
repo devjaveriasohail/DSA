@@ -43,9 +43,9 @@ int main() {
 
    //Logical operator  AND&& ,OR|| ,NOT! 
    // the only give the boolen value 0 for false 1 for true
-     cout<<"AND "<<((6>9)&&(4<5))<<"\n"; 
-       cout<<"OR "<<((6>9)||(4<5))<<"\n"; 
-       cout<<"NOT "<<!((6>9)&&(4<5))<<"\n"; // it will give the reverse of and operation here
+     cout<<"AND "<<( (6>9) && (4<5) )<<"\n"; 
+       cout<<"OR "<<( (6>9) || (4<5) )<<"\n"; 
+       cout<<"NOT "<< ! ( (6>9) && (4<5) )<<"\n"; // it will give the reverse of and operation here
 
 
     return 0;
