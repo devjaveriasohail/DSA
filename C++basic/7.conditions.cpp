@@ -1,10 +1,10 @@
 #include <iostream>
 using namespace std;
 
-int main() {  
+int main() {   //(uncomment the below part)
 
     //conditional statments
-    //if case   (uncomment the below part)
+    //if case   
     // int age;
     // cout << "what is your age \n";
     // cin>>age;
@@ -13,30 +13,43 @@ int main() {
     // }
 
     //if else case
-     int age;
-    cout << "what is your age \n";
-    cin>>age;
-    if (age >=18){
-        cout<<"you can get you driving license \n";
-    } else {
-        cout<<"you cannot have you driving license \n";
-    }
+    //  int age;
+    // cout << "what is your age \n";
+    // cin>>age;
+    // if (age >=18){
+    //     cout<<"you can get you driving license \n";
+    // } else {
+    //     cout<<"you cannot have you driving license \n";
+    // }
 
        //if elseif case
-     int percentage;
-    cout << "what is your percentage \n";
-    cin>>percentage;
-    if (percentage >=90){
-        cout<<"your grade is A \n";
-    } else if (percentage <=90 && percentage >=80 ) {
-        cout<<"your grade is B\n";
-    } else if (percentage <=80 && percentage >=70 ) {
-        cout<<"your grade is C\n";
-    } else {
-        cout<<"your grade is F \n";
-    }    
+    //  int percentage;
+    // cout << "what is your percentage \n";
+    // cin>>percentage;
+    // if (percentage >=90){
+    //     cout<<"your grade is A \n";
+    // } else if (percentage <=90 && percentage >=80 ) {
+    //     cout<<"your grade is B\n";
+    // } else if (percentage <=80 && percentage >=70 ) {
+    //     cout<<"your grade is C\n";
+    // } else {
+    //     cout<<"your grade is F \n";
+    // }    
 
-   
+
+//practice question find lowercase and upper case character
+    char ch;
+    cout << "Enter the letter \n";
+    cin>>ch;
+    if (ch >= 'A' && ch <= 'Z'){
+        cout<<"the letter enter is Upper case \n";
+    }  else if (ch >= 'a' && ch <= 'z' ) {
+           cout<<"the letter enter is lower case \n";
+     } else {
+        cout<<"please enter alphbetic  character \n";
+    }       
+    // you can solve this same question using ascii values 
+    // A=65 Z=90  a=97 z=122  
 
     return 0;
 }
