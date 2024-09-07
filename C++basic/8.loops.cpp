@@ -21,6 +21,7 @@ int main() {
         i ++;
     }
 */
+/*
 //doing the same task with for loop uncomment or comment the respective part/portion
 // for loop  
    for(int i=1;i<=10;i++){
@@ -42,7 +43,19 @@ int main() {
     cin>>num;
     for (int k=0;k<=n;k=k+2){
         cout<<k<<" "; 
-    }
+     }
+     */
    
+   // practice question 
+   //sum from 1 till n
+   int n;
+   cout<<"Enter the number ";
+   cin>>n;
+     int sum=0;
+   for(int i=1; i<=n;i++){
+  
+    sum=sum +i;
+   }
+   cout <<sum <<"" ;
     return 0;
 }
