@@ -47,12 +47,60 @@ int main() {
     }
 
     //triangle Patterns
+
+    //for symbol
     for(int i=1; i<=n; i++){      
         for(int j=1; j<=i; j++){ 
-        cout<<"*";
+        cout<<"*"<<" " ;
         }  
         cout<<endl; 
     }
+
+    //for number
+     for(int i=1; i<=n; i++){      
+        for(int j=1; j<=i; j++){ 
+        cout<<i<<" " ;
+        }  
+        cout<<endl; 
+    }
+
+    // alphabetic order
+     char ch= 'A';
+     for(int i=1; i<=n; i++){      
+        for(int j=1; j<=i; j++){ 
+             cout<<ch <<" " ;
+        }  
+        ch = ch + 1; 
+        cout<<endl; 
+    }
+
+    //increasing number
+      for(int i=1; i<=n; i++){      
+        for(int j=1; j<=i; j++){ 
+             cout<<j<<" "; 
+        } 
+        cout<<endl; 
+    }
+
+    //reverse triangle 
+     for(int i=1; i<=n; i++){      
+        for(int j=i; j>0; j--){ 
+             cout<<j<<" "; 
+        } 
+        cout<<endl; 
+    }
+
+    // floyd's triangle
+    int number=1;
+     for(int i=1; i<=n; i++){      
+        for(int j=1; j<=i; j++){ 
+             cout<<number<<" "; 
+             number++;
+        } 
+        cout<<endl; 
+    }
+
+
 
     return 0;
 }
