@@ -83,9 +83,19 @@ int main() {
     }
 
     //reverse triangle 
+    // for number
      for(int i=1; i<=n; i++){      
         for(int j=i; j>0; j--){ 
              cout<<j<<" "; 
+        } 
+        cout<<endl; 
+    }
+    // for alphabets
+     for(int i=1; i<=n; i++){ 
+        for(int j=i; j>0; j--){ 
+               char ch ='A';
+               ch=ch+j-1;
+               cout<<ch<<" "; 
         } 
         cout<<endl; 
     }
