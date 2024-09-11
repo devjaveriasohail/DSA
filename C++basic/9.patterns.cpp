@@ -160,6 +160,39 @@ int main() {
         cout<<endl;
        }
 
+     //pyramid pattern
+     //number
+     for(int i=0; i<n; i++){
+        // for spaces
+        for(int j=n; j>i; j--){
+            cout<<" ";
+        }
+        for(int j=0;j<=i;j++){
+            cout<<j+1;
+        }
+        for (int j=i;j>0; j--){
+            cout<<j;
+        }
+        cout<<endl;
+       }
+
+      //aplhabets
+       for(int i=0; i<n; i++){
+         char ch='A';
+        // for spaces
+        for(int j=n; j>i; j--){
+            cout<<" ";
+        }
+        for(int j=0;j<=i;j++){
+            cout<<ch;
+            ch++;
+        }
+        for (int j=i;j>0; j--){
+            char letter='A';
+            cout<< char (letter+(j-1));
+        }
+        cout<<endl;
+       }
 
     return 0;
 }
