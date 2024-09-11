@@ -101,15 +101,64 @@ int main() {
     }
 
     // floyd's triangle
-    int number=1;
-     for(int i=1; i<=n; i++){      
+      //numbers
+       int number=1;
+       for(int i=1; i<=n; i++){      
         for(int j=1; j<=i; j++){ 
              cout<<number<<" "; 
              number++;
         } 
         cout<<endl; 
-    }
+       }
 
+       //alphabets
+       char letter ='A';
+       for(int i=1; i<=n; i++){      
+        for(int j=1; j<=i; j++){ 
+             cout<<letter<<" "; 
+             letter++;
+        } 
+        cout<<endl; 
+       }
+
+       //inverted triangle pattern
+       //number
+       for(int i=0; i<n; i++){
+        // for spaces
+        for(int j=0; j<i; j++){
+            cout<<" ";
+        }
+        // for number
+        for(int j=0;j<n-i;j++){
+            cout<<i+1;
+        }
+        cout<<endl;
+       }
+
+    // either go for above one or this same output but just the difference of index value of i 
+    //  for(int i=1; i<=n; i++){
+    //     for(int j=1; j<i; j++){
+    //         cout<<" ";
+    //     }
+    //     for(int j=0;j<=n-i;j++){
+    //         cout<<i;
+    //     }
+    //     cout<<endl;
+    //    }
+
+     //aplhabets
+     char cha ='A';
+       for(int i=0; i<n; i++){
+        // for spaces
+        for(int j=0; j<i; j++){
+            cout<<" ";
+        }
+        for(int j=0;j<n-i;j++){
+            cout<<cha;
+        }
+        cha++;
+        cout<<endl;
+       }
 
 
     return 0;
