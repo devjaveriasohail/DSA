@@ -20,10 +20,32 @@ int sum(int a,int b){   //here a and b are parametes
      return sum;
 }
 
+//min of 2 numbers
+int min(int c, int d){
+    int min =0;
+    if (c>d){
+       min= d;
+    }else{
+        min =c;
+    }
+  return min;
+}
+
 int main() {
      greeting();  // calling function
-     greetingPerson("javeria");
-     sum(9,8); // 8 ,9 are arguments
+
+     greetingPerson("javeria");  // calling function with parameters
+
+     cout<<sum(9,8)<<endl; // 8 ,9 are arguments
+
+     int num1,num2;   // taking the number from user to find minium of two number
+      cout<<"Enter the first number ";
+      cin>>num1;
+      cout<<"Enter the second number ";
+      cin>>num2;
+      int result =  min(num1,num2); // passing the value of num1 and num2 as arguments and storing the return answer in result variable
+      // we can also directly print the answer as we did in sum function 
+      cout<<"The minium of number is "<<result<<endl;
     
     return 0;
 }
