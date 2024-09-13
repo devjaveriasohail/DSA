@@ -31,6 +31,15 @@ int min(int c, int d){
   return min;
 }
 
+// sum of 1 to N values
+int totalSum(int n){
+    int sum;
+    for(int i=1; i<=n; i++){
+      sum += i;
+    }
+    return sum;
+}
+
 int main() {
      greeting();  // calling function
 
@@ -46,6 +55,11 @@ int main() {
       int result =  min(num1,num2); // passing the value of num1 and num2 as arguments and storing the return answer in result variable
       // we can also directly print the answer as we did in sum function 
       cout<<"The minium of number is "<<result<<endl;
+
+      int n;
+      cout<<"Enter the a number ";
+      cin>>n;
+      cout<<totalSum(n);
     
     return 0;
 }
