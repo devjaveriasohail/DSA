@@ -33,11 +33,22 @@ int min(int c, int d){
 
 // sum of 1 to N values
 int totalSum(int n){
-    int sum;
+    int sum=0;
     for(int i=1; i<=n; i++){
       sum += i;
     }
     return sum;
+}
+
+// sum of digits in given number
+int sumDigits(int num){
+    int digitSum=0;
+    for(int i=1; num>0; i++){
+        int lastdigit= num % 10;
+        num = num /10;
+    digitSum +=lastdigit;
+    }
+    return digitSum;
 }
 
 int main() {
@@ -59,7 +70,13 @@ int main() {
       int n;
       cout<<"Enter the a number ";
       cin>>n;
-      cout<<totalSum(n);
+      cout<<"Sum from 1 to "<<n<<" number  is "<<totalSum(n)<<endl;
+
+      // sum of digit
+      int num;
+      cout<<"Enter the a larger number ";
+      cin>>num;
+      cout<<"The Sum of digit of "<<num<<" number  is "<<sumDigits(num)<<endl;
     
     return 0;
 }
