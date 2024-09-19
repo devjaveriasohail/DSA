@@ -23,5 +23,22 @@ int main() {
         cout<<student[i]<<" ";
     }
 
+   // find the smallest and largest value in array
+   // input the values from user
+   int value[10];
+   int sizeValue=10; // fixing the size of value array and assigninig it to variable
+    cout<<"Enter the values to find largest and smaller in them ";
+    for(int i=0; i<sizeValue; i++){
+        cin>>value[i];
+    }
+    // finding the largest and smallest value
+    int largest=value[0];
+     for(int i=0; i<5; i++){
+        if(value[i]>largest){
+           largest=value[i];
+        }
+        
+    }
+     cout<<"\nThe largest value is "<<largest;
     return 0;
 }
