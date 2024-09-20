@@ -1,6 +1,22 @@
 #include <iostream>
 using namespace std;
 
+int linearSearch(int marks[10],int find){
+    int index=-1;
+    for(int i=0; i<10; i++){
+      if (marks[i]==find){
+        return i;
+    }
+    }
+     return -1;
+}
+
+// int reverse(int marks[]){
+//    for(int i=10; i>=0;i--){
+//     marks[i]==
+//    }
+// }
+
 int main() {
     // arrays
     int marks[10]; //declartion
@@ -48,19 +64,16 @@ int main() {
      cout<<endl;
      
     // linear search
-    int find=100;
-    int index=-1;
-    for(int i=0; i<10; i++){
-      if (marks[i]==find){
-        index=i;
-    }
-    }
+    int find= 100;
+     int index=linearSearch(marks,100);
+     
     if(index!=-1){
      cout<<"The marks "<<find<<" present at index "<<index;
     }else{
-         cout<<"The marks "<<find<<"not present ";
+         cout<<"The marks "<<find<<" not present ";
     }
    
+   //reverse array
     
     
      
