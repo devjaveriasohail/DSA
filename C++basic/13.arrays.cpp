@@ -13,18 +13,13 @@ int linearSearch(int marks[10], int find,int size)
     }
     return -1;
 }
-
-void reverse(int marks[],int size)
-{
-    for (int i = 0; i < size; i++)
-    {
-        for (int j = size; j > 0; j--)
-        {
-            int swap;
-            swap == marks[i];
-            marks[i] == marks[j];
-            marks[j] == swap;
-        }
+ 
+void reverse(int marks[],int size){
+    int start=0, end=size-1;
+    while(start<end){
+        swap(marks[start],marks[end]);
+        start++;
+        end--;
     }
 }
 
@@ -89,7 +84,7 @@ int main()
     }
     else
     {
-        cout << "The marks " << find << " not present ";
+        cout << "The marks " << find << " not present "<<endl;
     }
 
     // reverse array
