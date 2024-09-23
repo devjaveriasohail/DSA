@@ -17,6 +17,40 @@ int main() {
    for (int i: vec){    // i store the value/data present on the indexes
     cout<< i<<" "; 
    }
+   cout<<endl;
+
+ // vector functions
+  //size
+  cout<<vec.size()<<endl;
+ //push back
+  vec.push_back(5);
+  vec.push_back(25);
+
+  // printing  after
+  cout<<"push back";
+   for (int i: vec){   
+    cout<< i<<" "; 
+   }
+   cout<<endl;
+
+   //pop-back
+  vec.pop_back();
+   // printing 
+    cout<<"pop back";
+   for (int i: vec){   
+    cout<< i<<" "; 
+   }
+   cout<<endl;
+
+  //front
+  cout<<"front "<<vec.front()<<endl;
+  //back
+  cout<<"back "<<vec.back()<<endl;
+  // at
+  cout<<"at "<<vec.at(1)<<endl;
+
+
+ 
 
     return 0;
 }
