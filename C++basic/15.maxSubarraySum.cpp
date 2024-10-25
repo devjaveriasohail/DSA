@@ -3,13 +3,12 @@
 using namespace std;
 
 int main() {
- // Printing all possible sub array using brute force
+
     int arr[]={1,2,3,4,5};
     int n =sizeof(arr)/sizeof(int); // storing size of array
     cout <<"Size of array is "<< n<<endl;
 
-
-
+// Printing all possible sub array using brute force
     for(int st=0; st<n; st++){    // for starting location of subarray
         for(int end=st; end<n; end++){ // for ending location of subarray
              for(int i=st; i<=end; i++){  // for printing subarray
@@ -19,5 +18,17 @@ int main() {
         }
         cout<<endl;
     }
+
+// Finding Maximum  subarray Sum using brute force
+int maxSum=INT_MIN;
+    for(int st=0; st<n; st++){ 
+       int  currentSum=0;   
+        for(int end=st; end<n; end++){ 
+            currentSum += arr[end];
+            maxSum=max(currentSum,maxSum);
+        }
+    }
+    cout<<"Maximum Subarray sum is "<<maxSum;
+
     return 0;
 }
