@@ -4,7 +4,7 @@ using namespace std;
 
 int main() {
 
-    int arr[]={1,2,3,4,5};
+    int arr[]={1,-2,3,4,5};
     int n =sizeof(arr)/sizeof(int); // storing size of array
     cout <<"Size of array is "<< n<<endl;
 
@@ -29,6 +29,18 @@ int maxSum=INT_MIN;
         }
     }
     cout<<"Maximum Subarray sum is "<<maxSum;
-
+cout<<endl;
+//KADANE'S ALGORITHM
+// Finding Maximum  subarray Sum using  KADANE'S ALGORITHUM
+int maxmiumSum=INT_MIN;
+int  currSum=0;   
+    for(int i=0; i<n; i++){ 
+            currSum += arr[i];
+            maxmiumSum=max(currSum,maxmiumSum);
+        if(currSum<0){
+            currSum=0;
+        }
+    }
+    cout<<"Maximum Subarray sum using kadane's algo "<<maxmiumSum;
     return 0;
 }
